@@ -1,35 +1,63 @@
-# DOCKER Workshop challenges#
+# Docker Workshop Challenge #
 
-## challenge 1 ##
-* Run hello-world container
-* Pull latest nginx image
-* Run it detached
-* verify that nginx HTTP response is sent
+Welcome to the SAP's Docker Workshop Challenge!
+![Alt text](./resources/cover.png "cover")
 
-## challenge 2 ##
-* Write a Dockerfile
-* Make base os ubuntu 16.04
-* Make label your name
-* Create a directory /home/myapp
-* Set an environment variable USER <your name>
-* Run the container attached. Verify directory is created. Verify USER env var
+
+## Challenge 1 ##
+## 1.1
+* First, we'll make sure Docker is available.
+* Let's run the classic hello-world container!
+* `$ docker run hello-world`
+
+### END
+* docker hello-world service runs correctly in the terminal
+![Alt text](./resources/end_result_1.1.png "hello-world")
+
+## 1.2
+* Pull the latest nginx image
+* Run the image in detach mode
+* Verify that nginx is up and running and that the port is exposed correctly.
+
+### END
+To verify:
+* check nginx homepage is available using the browser
+![Alt text](./resources/end_result_1.1.png "nginx")
+
+## Challenge 2 ##
+* Create a Dockerfile
+* Add the Linux OS - Ubuntu 16.04 image
+* Add your name as a label
+* Create a directory /home/myapp in the container
+* Set an environment variable *USER* with your name
+* Run the container in attached mode
+
+### END
+- Connect to the container
+- Verify that the directory was created
+- Verify USER env variable contains you name!
+![Alt text](./resources/end_result_2.png "nginx")
  
-## challenge 3 ##
+## Challenge 3 ##
 * Create a dockerized web server
-* You may choose your language and framework
-* We recommend NodeJS/express
-* The server should listen on port 8080 of container and print to stdout when it’s up and listening
-* You should map a private host port to container port so that the server can be accessed from outside
-* You should create a directory for your application In the image and copy your source code to it
+* You may choose any language and framework
+  * We recommend NodeJS/express, but any other language/framework is possible!
+* The server should listen on port 8080 of the container and print to stdout when it’s up and listening
+* You should map a private host port to the container port so that the server can be accessed from the outside
+* You should create a directory for your application in the image and copy your source code to it
 * Build and run the image
-* verify image exists. Print container logs
-* Last. Send HTTP GET to server and verify you got response “Hello world <my user name>”
 
-## challenge 4 - bonus ##
-* use docker compose to create a microservice based application
-* one container will serve as a web server
-* the second will server as a persistency (DB)
-* The application should support creation and retrieval of tasks for task manager
-* Add endpoint for adding a task. Should use HTTP PUT 
-* Add endpoint for reading a task. Should use HTTP GET with task id as path param 
-* Add endpoint for reading all tasks. Should use HTTP GET
+## END
+* Verify the image exists.
+* Print the container logs.
+* Send an HTTP GET request to the server and verify you get back the right response
+  * For example, “Hello world!”
+
+## Challenge 4 - *BONUS* ##
+* Use docker compose to create a microservice based application
+* One container will serve as a web server
+* The second container will server as the persistence (DB)
+* The application should support the creation and retrieval of tasks for a task manager
+* Add an endpoint for adding a task. Should use HTTP PUT 
+* Add an endpoint for reading a task. Should use HTTP GET with a task id as path parameter 
+* Add an endpoint for reading all tasks. Should use HTTP GET
