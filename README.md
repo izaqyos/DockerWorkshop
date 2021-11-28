@@ -22,7 +22,7 @@ Welcome to the SAP's Docker Workshop Challenge!
 ### END
 To verify:
 * check nginx homepage is available using the browser
-![Alt text](./resources/end_result_1.1.png "nginx")
+![Alt text](./resources/end_result_1.2.png "nginx")
 
 ## Challenge 2 ##
 * Create a Dockerfile
