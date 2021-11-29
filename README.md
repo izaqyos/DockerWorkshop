@@ -52,7 +52,8 @@ To verify:
 * Print the container logs.
 * Send an HTTP GET request to the server and verify you get back the right response
   * For example, “Hello world!”
-
+![Alt text](./resources/end_result_3.png "nginx")
+  
 ## Challenge 4 - *BONUS* ##
 * Use docker compose to create a microservice based application
 * One container will serve as a web server
