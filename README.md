@@ -12,6 +12,7 @@ Welcome to the SAP's Docker Workshop Challenge!
 
 ### END
 * docker hello-world service runs correctly in the terminal
+
 ![Alt text](./resources/end_result_1.1.png "hello-world")
 
 ## 1.2
@@ -22,6 +23,7 @@ Welcome to the SAP's Docker Workshop Challenge!
 ### END
 To verify:
 * check nginx homepage is available using the browser
+
 ![Alt text](./resources/end_result_1.2.png "nginx")
 
 ## Challenge 2 ##
@@ -33,9 +35,10 @@ To verify:
 * Run the container in attached mode
 
 ### END
-- Connect to the container
-- Verify that the directory was created
-- Verify USER env variable contains you name!
+* Connect to the container
+* Verify that the directory was created
+* Verify USER env variable contains you name!
+
 ![Alt text](./resources/end_result_2.png "ubuntu")
  
 ## Challenge 3 ##
@@ -52,12 +55,13 @@ To verify:
 * Print the container logs.
 * Send an HTTP GET request to the server and verify you get back the right response
   * For example, “Hello world!”
+
 ![Alt text](./resources/end_result_3.png "curl")
   
 ## Challenge 4 - *BONUS* ##
 * Use docker compose to create a microservice based application
 * One container will serve as a web server
-* The second container will server as the persistence (DB)
+* The second container will serve as the persistence (DB)
 * The application should support the creation and retrieval of tasks for a task manager
 * Add an endpoint for adding a task. Should use HTTP PUT 
 * Add an endpoint for reading a task. Should use HTTP GET with a task id as path parameter 
