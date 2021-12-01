@@ -36,7 +36,7 @@ To verify:
 - Connect to the container
 - Verify that the directory was created
 - Verify USER env variable contains you name!
-![Alt text](./resources/end_result_2.png "nginx")
+![Alt text](./resources/end_result_2.png "ubuntu")
  
 ## Challenge 3 ##
 * Create a dockerized web server
@@ -52,7 +52,8 @@ To verify:
 * Print the container logs.
 * Send an HTTP GET request to the server and verify you get back the right response
   * For example, “Hello world!”
-
+![Alt text](./resources/end_result_3.png "curl")
+  
 ## Challenge 4 - *BONUS* ##
 * Use docker compose to create a microservice based application
 * One container will serve as a web server
