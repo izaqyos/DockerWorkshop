@@ -54,7 +54,7 @@ To verify:
 * Verify the image exists.
 * Print the container logs.
 * Send an HTTP GET request to the server and verify you get back the right response
-  * For example, “Hello world!”
+  * For example, “Hello world <my user name>!”
 
 ![Alt text](./resources/end_result_3.png "curl")
   
